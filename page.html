@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - John Daryll S. Enriquez</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #101820;
+            color: #ffffff;
+        }
+
+        /* Header Style */
+        header {
+            padding: 10px 0;
+            background-color: #1e2432;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: #FFD700;
+        }
+
+        /* Main Container */
+        .about-section {
+            margin: 30px auto;
+            background-color: #1e2432;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #FFD700;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            color: #dcdcdc;
+            line-height: 1.8;
+        }
+
+        /* Image Style */
+        .about-img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 5%;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Buttons */
+        .btn-custom {
+            background-color: #FFD700;
+            color: #000;
+            font-weight: bold;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 10px;
+            transition: 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #ffcc00;
+            color: #000;
+        }
+
+        /* Social Links */
+        .social-links a {
+            color: #FFD700;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ffcc00;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1e2432;
+            color: #dcdcdc;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+			position: sticky;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="text-center">
+        <h1>About Me</h1>
+    </header>
+
+    <!-- Main About Section -->
+    <section class="about-section container">
+        <!-- Image -->
+        <img src="enriquez.jpg" alt="John Daryll S. Enriquez" class="about-img">
+
+        <!-- Introduction -->
+        <h2>John Daryll S. Enriquez</h2>
+        <p style="text-align: justify;">John Daryll S. Enriquez
+            Born on December 20, 2000, John Daryll S. Enriquez is a dedicated and ambitious individual who values education and personal growth. He completed his undergraduate studies at First City Providential College, where he laid the foundation for his academic and professional journey. With a passion for technology and innovation, John has always been determined to excel in his chosen field.
+            Currently, John is taking his passion to the next level by pursuing a Master’s degree in Information Technology. This advanced education reflects his commitment to expanding his expertise and staying at the forefront of technological advancements. He believes that continuous learning is essential in an ever-evolving world and sees this as an opportunity to refine his skills and achieve his career aspirations.
+            Beyond his academic pursuits, John is known for his good-hearted nature and positive outlook on life. A loving and compassionate individual, he cherishes building meaningful relationships and making a positive impact on the people around him. His genuine kindness and respect for others have earned him admiration and trust from those who know him.
+            John’s story is one of determination, growth, and purpose. Whether in academics, professional endeavors, or personal relationships, he strives to embody his values of excellence, empathy, and resilience. His journey is a testament to his belief in the power of hard work, learning, and love in shaping a fulfilling and impactful life.</p>
+
+        <!-- Contact Info -->
+        <div class="mt-4">
+            <a href="mailto:johndaryll.enriquez@fcpc.edu.ph" class="btn btn-custom">Contact Me</a>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-links mt-3">
+            <a href="https://www.facebook.com/john.daryll.enriquez.2024" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/zeuqirne2/"><i class="bi bi-instagram"></i></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 First City Providential College - MIT208</p>
+    </footer>
+    <script type="module">
+        import Chatbox from 'https://cdn.jsdelivr.net/npm/@chaindesk/embeds@latest/dist/chatbox/index.js';
+      
+        const widget = await Chatbox.initBubble({
+          agentId: 'cm4md4d3209jgppjjbxl9uutm',
+          
+          // optional 
+          // If provided will create a contact for the user and link it to the conversation
+          contact: {
+            firstName: 'John',
+            lastName: 'Doe',
+            email: 'customer@email.com',
+            phoneNumber: '+33612345644',
+            userId: '42424242',
+          },
+          // optional
+          // Override initial messages
+          initialMessages: [
+            'Hello Georges how are you doing today?',
+            'How can I help you ?',
+          ],
+          // optional
+          // Provided context will be appended to the Agent system prompt
+          context: "The user you are talking to is John. Start by Greeting him by his name.",
+        });
+      
+        // open the chat bubble
+        widget.open();
+      
+        // close the chat bubble
+        widget.close()
+      
+        // or 
+        widget.toggle()
+      </script>
+</body>
+</html>
